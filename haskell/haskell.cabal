@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4bd51b693737cc6866fe3b0cdc56f54b9c018df4765431536112f4a7ebc95dcc
+-- hash: d0249f9ee2f17540c0f06a365c8921bff4a157546840ee955e0ce51fa5c5ce1c
 
 name:           haskell
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       Lib
       One
+      Three
       Two
   other-modules:
       Paths_haskell
@@ -38,6 +39,7 @@ library
       attoparsec
     , base >=4.7 && <5
     , text
+    , vector
   default-language: Haskell2010
 
 executable haskell-exe
@@ -52,6 +54,7 @@ executable haskell-exe
     , base >=4.7 && <5
     , haskell
     , text
+    , vector
   default-language: Haskell2010
 
 test-suite haskell-test
@@ -67,4 +70,5 @@ test-suite haskell-test
     , base >=4.7 && <5
     , haskell
     , text
+    , vector
   default-language: Haskell2010

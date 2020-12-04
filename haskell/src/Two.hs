@@ -15,7 +15,7 @@ data Input = Input
 
 partOne :: IO ()
 partOne = do
-  contents <- TIO.readFile "../2/2.txt"
+  contents <- TIO.readFile "../data/2.txt"
   let input = parseData contents
   case input of
     Left e -> do
@@ -28,7 +28,7 @@ partOne = do
 
 partTwo :: IO ()
 partTwo = do
-  contents <- TIO.readFile "../2/2.txt"
+  contents <- TIO.readFile "../data/2.txt"
   let input = parseData contents
   case input of
     Left e -> do

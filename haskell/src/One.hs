@@ -11,7 +11,7 @@ one = do
 
 two :: IO ()
 two = do
-  contents <- readFile "../data/2.txt"
+  contents <- readFile "../data/1.txt"
   let ints = parseData contents
   print $ sumThreeTo2020 ints
   return ()
