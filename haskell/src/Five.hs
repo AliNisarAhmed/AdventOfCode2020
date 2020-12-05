@@ -40,14 +40,12 @@ calcSeatId (r, c) = 8 * r + c
 
 calcMySeatId :: [(Int, Int)] -> [Int] -> [Int]
 calcMySeatId seats seatIds =
-  [ mySeatId (r1, c1)
+  [ calcSeatId (r1, c1) + 1
     | (r1, c1) <- seats,
       (r2, c2) <- seats,
       calcSeatId (r1, c1) + 1 == calcSeatId (r2, c2) - 1,
       calcSeatId (r1, c1) + 1 `notElem` seatIds
   ]
-  where
-    mySeatId (x, y) = 8 * x + y + 1
 
 rowAndColumn :: ((Int, Int), (Int, Int)) -> (Int, Int)
 rowAndColumn ((r, _), (c, _)) = (r, c)
