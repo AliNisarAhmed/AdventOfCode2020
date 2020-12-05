@@ -159,13 +159,8 @@ validateHairColor t = do
 parseHairColor :: Parser T.Text
 parseHairColor = do
   h <- char '#'
-  c1 <- satisfy $ AT.inClass "0-9a-f"
-  c2 <- satisfy $ AT.inClass "0-9a-f"
-  c3 <- satisfy $ AT.inClass "0-9a-f"
-  c4 <- satisfy $ AT.inClass "0-9a-f"
-  c5 <- satisfy $ AT.inClass "0-9a-f"
-  c6 <- satisfy $ AT.inClass "0-9a-f"
-  return $ T.pack [h, c1, c2, c3, c4, c5, c6]
+  s <- AT.count 6 (satisfy $ AT.inClass "0-9a-f")
+  return $ T.pack $ h : s
 
 validPassport :: Passport -> Bool
 validPassport Passport {..} =
