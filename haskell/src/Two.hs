@@ -9,7 +9,7 @@ import qualified Data.Text.IO as TIO
 data Input = Input
   { range :: (Int, Int),
     targetLetter :: Char,
-    sentence :: T.Text
+    password :: T.Text
   }
   deriving (Show)
 
@@ -52,7 +52,9 @@ countChar c = T.length . T.filter (c ==)
 
 checkCharAtPosition :: Input -> Bool
 checkCharAtPosition (Input (p1, p2) c s) =
-  not (b1 && b2) && (b1 || b2)
+  -- not (b1 && b2) && (b1 || b2)
+  -- since the above is a xor (both cant be true and both cant be false), just do this
+  b1 /= b2
   where
     string = T.unpack s
     b1 = string !! (p1 - 1) == c

@@ -24,6 +24,7 @@ dependencies:
 - attoparsec
 - text
 - vector
+- containers
 
 library:
   source-dirs: src
