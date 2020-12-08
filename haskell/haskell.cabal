@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: adbea96c0f0ebc6b114ee04b957ff3547b6b4fc2f6bbb1b8e79a74c2b5e3dfc9
+-- hash: 2c35bf2cb3d66c9c30b9950be60a0b5261eaa2b4249a00fc15de6420a26ca383
 
 name:           haskell
 version:        0.1.0.0
@@ -27,11 +27,13 @@ source-repository head
 
 library
   exposed-modules:
+      AOCStarterTemplate
       Five
       Four
       Lib
       MyLib
       One
+      Seven
       Six
       Three
       Two
@@ -43,6 +45,7 @@ library
       attoparsec
     , base >=4.7 && <5
     , containers
+    , split
     , text
     , vector
   default-language: Haskell2010
@@ -59,6 +62,7 @@ executable haskell-exe
     , base >=4.7 && <5
     , containers
     , haskell
+    , split
     , text
     , vector
   default-language: Haskell2010
@@ -76,6 +80,7 @@ test-suite haskell-test
     , base >=4.7 && <5
     , containers
     , haskell
+    , split
     , text
     , vector
   default-language: Haskell2010

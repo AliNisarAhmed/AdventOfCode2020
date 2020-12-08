@@ -25,6 +25,7 @@ dependencies:
 - text
 - vector
 - containers
+- split
 
 library:
   source-dirs: src
