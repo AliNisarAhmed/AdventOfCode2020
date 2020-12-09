@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f84c0078b0f4a62118d6f125257ecf5d604fca91566c2bd86ac02170f93f94ea
+-- hash: 5dd8bc2feccba69466a9bbf549d4673b876f9adb1d3eb260e2552b3c9a9fc39a
 
 name:           haskell
 version:        0.1.0.0
@@ -33,6 +33,7 @@ library
       Four
       Lib
       MyLib
+      Nine
       One
       Seven
       Six
