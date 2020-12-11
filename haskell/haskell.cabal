@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 53493ef036cc5c8dc3cfc91f254795a95f88da04e20c21d3ff34e57bf51bdca0
+-- hash: 7e0274d703cc489b63025568609d2ae0a288c9ddeed595782b0f1867a4608bbe
 
 name:           haskell
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       AOCStarterTemplate
       Eight
+      Eleven
       Five
       Four
       Lib
