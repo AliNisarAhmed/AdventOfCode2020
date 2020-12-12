@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7e0274d703cc489b63025568609d2ae0a288c9ddeed595782b0f1867a4608bbe
+-- hash: 12fbc02fbbf95398843a2daf2d8618ff51bd8ba520d4771b4935802215f499d6
 
 name:           haskell
 version:        0.1.0.0
@@ -40,6 +40,7 @@ library
       Six
       Ten
       Three
+      Twelve
       Two
   other-modules:
       Paths_haskell
