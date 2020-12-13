@@ -1,3 +1,5 @@
+{-# LANGUAGE BangPatterns #-}
+
 module MyLib where
 
 count :: Eq a => a -> [a] -> Int
