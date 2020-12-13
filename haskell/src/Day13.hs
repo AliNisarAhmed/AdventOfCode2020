@@ -1,4 +1,3 @@
-{-# LANGUAGE BangPatterns #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module Day13 where
@@ -46,7 +45,7 @@ readInt = read
 part2 :: [(Int, Int)] -> Int
 part2 = fst . foldl' go (0, 1)
   where
-    go (!base, !step) (offset, i) = (base', step * i)
+    go (base, step) (offset, i) = (base', lcm step i)
       where
         base' =
           until
