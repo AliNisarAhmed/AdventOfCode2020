@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Two where
+module Day02 where
 
 import Data.Attoparsec.Text
 import qualified Data.Text as T

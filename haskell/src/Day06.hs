@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Six where
+module Day06 where
 
 import Data.Map (Map)
 import qualified Data.Map as M

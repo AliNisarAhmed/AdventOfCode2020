@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Twelve where
+module Day12 where
 
 import Control.Applicative (Alternative ((<|>)))
 import Control.Monad (guard)

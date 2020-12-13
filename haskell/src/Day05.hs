@@ -1,4 +1,4 @@
-module Five where
+module Day05 where
 
 import Data.Foldable (Foldable (foldl'))
 

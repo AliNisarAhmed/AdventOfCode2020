@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Three where
+module Day03 where
 
 import Data.Vector ((!), (!?))
 import qualified Data.Vector as V

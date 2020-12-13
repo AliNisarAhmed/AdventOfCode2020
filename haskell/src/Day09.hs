@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Nine where
+module Day09 where
 
 import Control.Monad (guard)
 import Data.List (sort)

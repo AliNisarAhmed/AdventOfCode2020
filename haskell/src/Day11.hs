@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Eleven where
+module Day11 where
 
 import Control.Monad (guard)
 import Data.Sequence (Seq, fromList)

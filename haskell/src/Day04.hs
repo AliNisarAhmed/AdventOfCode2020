@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards #-}
 
-module Four where
+module Day04 where
 
 import Control.Applicative ((<|>))
 import Control.Monad (guard)

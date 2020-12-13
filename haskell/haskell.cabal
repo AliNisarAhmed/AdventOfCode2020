@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 12fbc02fbbf95398843a2daf2d8618ff51bd8ba520d4771b4935802215f499d6
+-- hash: 4aaf458aaca72ddf6d11a04acc50b0847a18b58e995ef9782230f604a2f9637b
 
 name:           haskell
 version:        0.1.0.0
@@ -28,20 +28,20 @@ source-repository head
 library
   exposed-modules:
       AOCStarterTemplate
-      Eight
-      Eleven
-      Five
-      Four
+      Day01
+      Day02
+      Day03
+      Day04
+      Day05
+      Day06
+      Day07
+      Day08
+      Day09
+      Day10
+      Day11
+      Day12
       Lib
       MyLib
-      Nine
-      One
-      Seven
-      Six
-      Ten
-      Three
-      Twelve
-      Two
   other-modules:
       Paths_haskell
   hs-source-dirs:
